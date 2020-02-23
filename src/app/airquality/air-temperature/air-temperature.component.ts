@@ -2,20 +2,19 @@ import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/services/data.service';
 
 @Component({
-  selector: 'app-ozon',
-  templateUrl: './ozon.component.html',
-  styleUrls: ['./ozon.component.scss']
+  selector: 'app-air-temperature',
+  templateUrl: './air-temperature.component.html',
+  styleUrls: ['./air-temperature.component.scss']
 })
-export class OzonComponent implements OnInit {
+export class AirTemperatureComponent implements OnInit {
 
-  ozonWert: number;
+  temp: number;
 
   constructor(private _data: DataService) {  }
 
   ngOnInit() {
     this._data.status.subscribe(data => {
-      this.ozonWert = data.ozon
+      this.temp = data.lufttemperatur
     })
   }
-
 }

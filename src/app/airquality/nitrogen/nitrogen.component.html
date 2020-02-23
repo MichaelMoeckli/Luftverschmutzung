@@ -1,0 +1,27 @@
+<div class="wrapper">
+    <div class="content">
+        <mat-card class="card">
+            <mat-card-header>
+              <mat-card-title class="title">Stickstoffdioxid</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="werte">   
+                    <div class="wertGering" *ngIf="20 > stickstoffWert">
+                        <div class="circle" style="background-color: #32CD32"></div>
+                    </div>
+                    <div class="wertMittel" *ngIf="stickstoffWert > 20 &&  30 > stickstoffWert">
+                        <div class="circle" style="background-color: #FF7F50"></div>
+                    </div>
+                    <div class="wertHoch" *ngIf="stickstoffWert > 30 ">
+                        <div class="circle" style="background-color: #FF0000"></div>
+                    </div>
+                </div>
+                <div class="wert"><p><b>{{stickstoffWert}} µg/m3</b></p></div>
+                <p>
+                    Stickoxide (NOx) entstehen als unerwünschte Nebenprodukte bei Verbrennungsvorgängen. Dabei reagiert vor allem der Luftstickstoff (N2) mit dem Sauerstoff (O2) der Verbrennungsluft. Bei diesem Prozess entsteht Stickstoffmonoxid (NO), das erst in der Atmosphäre in das giftigere Stickstoffdioxid (NO2) umgewandelt wird.  
+                </p>
+            </mat-card-content>
+          </mat-card>
+    </div>
+</div>
+

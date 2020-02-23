@@ -10,9 +10,11 @@ export class AirqualityComponent implements OnInit {
 
   constructor(private _data: DataService) {  }
 
+  timestamp: string
+
   ngOnInit() {
     this._data.status.subscribe(data => {
-      console.log(data);
+      this.timestamp = data.timestamp
     })
   }
 

@@ -1,1 +1,26 @@
-<p>ozon works!</p>
+<div class="wrapper">
+    <div class="content">
+        <mat-card class="ozonCard">
+            <mat-card-header>
+              <mat-card-title class="title">Ozon</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="werte">   
+                    <div class="wertGering" *ngIf="120 > ozonWert">
+                        <div class="circle" style="background-color: #32CD32"></div>
+                    </div>
+                    <div class="wertMittel" *ngIf="ozonWert > 120 &&  180 > ozonWert">
+                        <div class="circle" style="background-color: #FF7F50"></div>
+                    </div>
+                    <div class="wertHoch" *ngIf="ozonWert > 180 ">
+                        <div class="circle" style="background-color: #FF0000"></div>
+                    </div>
+                </div>
+                <div class="wert"><p><b>{{ozonWert}} µg/m3</b></p></div>
+                <p>
+                Ozon (O3) ist ein normaler Bestandteil der Atmosphäre. In höheren Schichten (Stratosphäre) schützt es das Leben auf der Erde vor der schädlichen UV-Strahlung der Sonne. In den tieferen Luftschichten gefährdet es als wichtigster Bestandteil des Sommersmogs den Menschen und seine Umwelt. Hier bildet sich Ozon unter dem Einfluss des Sonnenlichts aus Stickoxiden (NOx) und flüchtigen organischen Verbindungen (VOC). Dabei kommt den Abgasen des Motorfahrzeugverkehrs die grösste Bedeutung zu.
+                </p>
+            </mat-card-content>
+          </mat-card>
+    </div>
+</div>

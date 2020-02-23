@@ -1,0 +1,30 @@
+<div class="wrapper">
+    <div class="content">
+        <mat-card class="card">
+            <mat-card-header>
+              <mat-card-title class="title">Lufttemperatur</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <div class="werte">   
+                    <div class="wertGering" *ngIf="30 > temp && temp > 0 ">
+                        <div class="circle" style="background-color: #32CD32"></div>
+                    </div>
+                    <div class="wertMittel" *ngIf="temp > 30 &&  37 > temp">
+                        <div class="circle" style="background-color: #FF7F50"></div>
+                    </div>
+                    <div class="wertHoch" *ngIf="temp > 37 ">
+                        <div class="circle" style="background-color: #FF0000"></div>
+                    </div>
+                    <div class="wertHoch" *ngIf="0 > temp ">
+                        <div class="circle" style="background-color: rgb(4, 0, 255)"></div>
+                    </div>
+                </div>
+                <div class="wert"><p><b>{{temp}} °C</b></p></div>
+                <p>
+                    Physikalisch betrachtet ist die Lufttemperatur ein Mass für den Wärmezustand eines Luftvolumens. Dieser wird bestimmt durch die mittlere kinetische Energie der ungeordneten Molekularbewegung in der Luft. Je grösser die mittlere Geschwindigkeit aller Moleküle in einem Luftvolumen ist, um so höher ist auch seine Lufttemperatur.
+                </p>
+            </mat-card-content>
+          </mat-card>
+    </div>
+</div>
+

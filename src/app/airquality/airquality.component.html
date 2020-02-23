@@ -1,12 +1,27 @@
 <div class="wrapper">
     <div class="content">
-        <p>airquality works!</p>
+        <h1>Luftqualität Zürich</h1>
+        <p>Die Stundenwerte werden stündlich, 10 Minuten nach der vollen Stunde, updated</p>
+        <div class="disclaimer">
+        <p>Die Messstation(Stampfenbachstrasse) steht an zentraler Lage in der Stadt Zürich. Sie repräsentiert eine städtische Lage mit mässigem Verkehr</p>
+        <p>
+            Die Daten stammen von <a href="https://data.stadt-zuerich.ch/dataset/luftqualitaet-stunden-aktuelle-messungen">Stadt Zürich Open Data</a>
+        </p>
+        </div>
         <div class="particulate-matter">
             <app-particulate-matter></app-particulate-matter>
         </div>
         <div class="ozon">
             <app-ozon></app-ozon>
         </div>
+        <div class="stickstoff">
+            <app-nitrogen></app-nitrogen>
+        </div>
+        <div class="temp">
+            <app-air-temperature></app-air-temperature>
+        </div>
+        <div class="grenzwerte">
+            <app-grenzwerte></app-grenzwerte>
+        </div>
     </div>
 </div>
-<p>airquality works!</p>

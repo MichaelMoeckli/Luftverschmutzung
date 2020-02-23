@@ -1,0 +1,33 @@
+table {
+    border-collapse: collapse;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+  }
+
+  .circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    border:1px solid black;
+    margin: 5px;    
+  }
+.werte{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.wrapper{
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.mat-card-header{
+  justify-content: center;
+}

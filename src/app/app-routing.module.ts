@@ -2,10 +2,8 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { AirqualityComponent } from './airquality/airquality.component';
 
-
-
 const routes: Routes = [ 
-  { path: '**', component: AirqualityComponent },
+  { path: '', component: AirqualityComponent },
 ];
 
 @NgModule({

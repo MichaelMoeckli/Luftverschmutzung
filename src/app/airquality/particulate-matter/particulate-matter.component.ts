@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from 'src/app/services/data.service';
 
 @Component({
   selector: 'app-particulate-matter',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParticulateMatterComponent implements OnInit {
 
-  constructor() { }
+  feinstaubWert: number;
+
+  constructor(private _data: DataService) {  }
 
   ngOnInit() {
+    this._data.status.subscribe(data => {
+      this.feinstaubWert = data.feinstaub
+    })
   }
 
 }
