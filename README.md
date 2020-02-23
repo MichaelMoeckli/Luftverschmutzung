@@ -1,4 +1,4 @@
-##->https://lq.vaorra.net/
+->https://lq.vaorra.net/
 
 # Luftverschmutzung
 
