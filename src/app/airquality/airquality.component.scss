@@ -5,6 +5,11 @@
     margin-top: 3%;
     margin-left: 5%;
 }
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 .particulate-matter{
     margin-top: 20px;
 }
