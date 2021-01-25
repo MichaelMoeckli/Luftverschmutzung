@@ -1,7 +1,5 @@
 # Luftverschmutzung
 
-## You can check out our project under https://lq.vaorra.net/
-
 API: https://github.com/MichaelMoeckli/Luftverschmutzung-Api
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
